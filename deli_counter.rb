@@ -5,7 +5,7 @@ def line(katz_deli)
     line = []
     katz_deli.each_with_index {|person, idx| line << "#{idx + 1}. #{person}"}
     line.join(" ")
-    puts "The line is currently: " + line[0]
+    puts "The line is currently: " + line[0..-1]
   end
 
 end
