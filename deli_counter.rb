@@ -14,3 +14,9 @@ def take_a_number(deli, name)
   deli.each_with_index {|person, idx| line << "Welcome, #{person}. You are number #{idx+1} in line."}
   puts line[-1]
 end
+
+def now_serving(deli)
+  if deli.length == 0
+    puts "There is nobody waiting to be served!"
+  elsif deli.length > 0
+    puts "Now serving #{deli[0]}"
