@@ -4,8 +4,7 @@ def line(katz_deli)
   elsif katz_deli.length > 0
     line = []
     katz_deli.each_with_index {|person, idx| line << "#{idx + 1}. #{person}"}
-    line.join(" ")
-    puts "The line is currently: " + line[0..-1]
+    puts "The line is currently: " + line.join(" ")
   end
 
 end
