@@ -6,5 +6,8 @@ def line(katz_deli)
     katz_deli.each_with_index {|person, idx| line << "#{idx + 1}. #{person}"}
     puts "The line is currently: " + line.join(" ")
   end
+end
 
+def take_a_number(katz_deli, name)
+  katz_deli << name
 end
