@@ -12,5 +12,5 @@ def take_a_number(deli, name)
   deli << name
   line = []
   deli.each_with_index {|person, idx| line << "Welcome, #{person}. You are number #{idx+1} in line."}
-  puts line[line.index(name)]
+  puts line[-1]
 end
